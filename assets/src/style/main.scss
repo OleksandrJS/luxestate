@@ -1,0 +1,33 @@
+/** @format */
+
+@import 'variables';
+@import 'mixins';
+@import 'owl.carousel.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// body {
+//   overflow-x: hidden;
+// }
+
+.container {
+  width: 1111px;
+  margin: 0 auto;
+  @media (max-width: 1111px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@import 'header';
+@import 'statistics';
+@import 'appartments';
+@import 'how';
+@import 'services';
+@import 'agents';
+@import 'add';
+@import 'footer';

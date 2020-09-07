@@ -1,0 +1,167 @@
+/** @format */
+
+.appartments {
+  background-color: $BG;
+  padding-bottom: 84px;
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+}
+
+.appartments_title {
+  @include title(446px);
+  padding-top: 60px;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.appartments_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+  @media (max-width: 1110px) {
+    justify-content: space-around;
+  }
+}
+
+.appartments_card {
+  width: 351px;
+  height: 501px;
+  background-color: #ffffff;
+  margin-bottom: 34px;
+  cursor: pointer;
+  box-shadow: 0px 2px 25px 0 rgba(23, 44, 51, 0.15);
+  @media (max-width: 1110px) {
+    margin-left: 29px;
+  }
+  @media (max-width: 700px) {
+    margin-left: 0px;
+  }
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+}
+
+.card_img {
+  width: 351px;
+  height: 381px;
+  background-color: $blue;
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+}
+
+.card_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  color: $black;
+  padding: 26px 0 26px 23px;
+}
+
+.card_desc {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 21px;
+}
+
+.card_price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.45px;
+  color: $yellow;
+}
+
+.appart_desc,
+.appart_bath,
+.appart_bed {
+  display: flex;
+}
+
+.appart_desc {
+  width: 128px;
+  justify-content: space-between;
+}
+
+.appart_bath,
+.appart_bed {
+  width: 55px;
+  justify-content: space-between;
+  & p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.33px;
+    color: #919eb1;
+  }
+  & img {
+    margin-top: 3px;
+  }
+}
+
+.appart_bath {
+  & img {
+    width: 11px;
+    height: 12px;
+  }
+}
+
+.appart_bed {
+  & img {
+    width: 18px;
+    height: 12px;
+  }
+}
+
+.appartments_cta {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.appart_form {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 40px;
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+.appart_btn {
+  width: 251px;
+  height: 71px;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  color: $black;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    height: 51px;
+  }
+}

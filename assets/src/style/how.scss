@@ -1,0 +1,102 @@
+/** @format */
+
+.how {
+  padding-bottom: 90px;
+}
+
+.how_title {
+  @include title(280px);
+  padding-top: 55px;
+  padding-bottom: 36px;
+}
+
+.how_subtitle {
+  @include subtitle();
+  padding-bottom: 70px;
+}
+
+.how_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 1110px) {
+    justify-content: space-evenly;
+  }
+}
+
+.how_card {
+  width: 345px;
+  height: 374px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 25px 0 rgba(23, 44, 51, 0.15);
+  position: relative;
+  @media (max-width: 1110px) {
+    margin-left: 29px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 650px) {
+    margin-left: 0;
+  }
+  @media (max-width: 375px) {
+    width: 300px !important;
+  }
+}
+
+.how_number {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.how_card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.5;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: $black;
+  padding-top: 115px;
+  padding-left: 43px;
+  & span {
+    padding-right: 16px;
+  }
+}
+
+.how_card-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  width: 280px;
+  padding-left: 70px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: $black;
+}
+
+.how_card-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: -0.33px;
+  text-align: left;
+  padding-left: 75px;
+  color: $black;
+  padding-top: 7px;
+}
+
+.how_card-underline {
+  width: 86px;
+  height: 3px;
+  background-color: $black;
+  margin-left: 72px;
+  margin-top: 2px;
+}

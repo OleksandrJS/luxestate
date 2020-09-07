@@ -1,0 +1,67 @@
+/** @format */
+
+@mixin navtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: $black;
+}
+
+@mixin title($width) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  width: $width;
+  color: $black;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+@mixin subtitle() {
+  width: 362px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: $black;
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+@mixin addLoc($left) {
+  width: 336px;
+  height: 81px;
+  background-color: $yellow;
+  position: absolute;
+  bottom: -42px;
+  left: $left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 56px;
+  padding-left: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: $black;
+}
