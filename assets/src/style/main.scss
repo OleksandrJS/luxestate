@@ -1,5 +1,14 @@
 /** @format */
 
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import 'variables';
 @import 'mixins';
 @import 'owl.carousel.scss';
@@ -9,10 +18,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-// body {
-//   overflow-x: hidden;
-// }
 
 .container {
   width: 1111px;
